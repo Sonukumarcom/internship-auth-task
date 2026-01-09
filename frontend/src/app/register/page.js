@@ -30,8 +30,8 @@ export default function Register() {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", formData);
-      alert("Account Created Successfully! ✅");
+      await axios.post("https://internship-auth-backend-jc7x.onrender.com/api/auth/register", formData);
+    alert("Account Created Successfully! ✅");
       router.push("/login");
     } catch (err) {
       alert("Registration Failed! Shayad ye email pehle se use ho raha hai. ❌");
